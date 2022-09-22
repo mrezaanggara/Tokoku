@@ -40,11 +40,24 @@
                                         <div class="col-6">
                                             <img src="<?php echo base_url("data/product/" . $data['gambar'] . ".jpg") ?>" class="img-responsive rounded" height="400" width="600" />
                                         </div>
-                                        <?php echo $data['kode_barang']; ?>
-                                        <?php echo $data['nama_barang']; ?>
-                                        <?php echo $data['jumlah']; ?>
-                                        <?php echo $data['harga']; ?>
-                                        <?php echo $data['deskripsi']; ?>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a>Kode Barang : <?php echo $data['kode_barang']; ?></a>
+                                                <h4>Nama Barang : <?php echo $data['nama_barang']; ?> </h4>
+                                                <a class="font-weight-bold">Harga Barang</a>
+                                                <p><?php echo rupiah($data['harga']) ?></p>
+                                                <a class="font-weight-bold">Jumlah Barang</a>
+                                                <p><?php echo $data['jumlah']; ?></p>
+                                                <a class="font-weight-bold">Deskripsi</a>
+                                                <p><?php echo $data['deskripsi']; ?></p>
+                                            </div>
+                                        </div>
+
+
+
+
+
                                         <?php echo $data['gambar']; ?>
                                     <?php endforeach ?>
                                 </div>
