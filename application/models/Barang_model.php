@@ -5,7 +5,7 @@ class Barang_model extends CI_Model
     public function getBarang($id = null)
     {
         if ($id == null) {
-            $this->db->select('*');
+            $this->db->select('kode_barang,nama_barang,jumlah');
             $this->db->from('barang');
             return $this->db->get()->result_array();
         } else {

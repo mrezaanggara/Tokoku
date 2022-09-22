@@ -19,4 +19,13 @@ class Barang extends CI_Controller
         ];
         $this->load->view('pages/product/addproduct', $data);
     }
+    public function detail($id)
+    {
+        $this->load->model('barang_model');
+        $data = [
+            'title' => 'Detail Barang | SisToko',
+        ];
+        $data['row'] = $this->barang_model->getBarang($id);
+        $this->load->view('pages/product/detailproduct', $data);
+    }
 }

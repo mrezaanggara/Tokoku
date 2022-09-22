@@ -61,7 +61,7 @@
                                                             <?= $data['jumlah']; ?>
                                                         </td>
                                                         <td>
-                                                            <a type="button" href="" class="btn btn-sm btn-success">
+                                                            <a type="button" href="<?php echo site_url("barang/detail/" . $data['kode_barang']) ?>" class="btn btn-sm btn-success">
                                                                 <i class="fas fa-info"></i>
                                                             </a>
                                                             <a type="button" class="btn btn-sm btn-danger" href="">
