@@ -41,13 +41,28 @@
                                             <div class="form-group">
                                                 <div class="form-label-group">
                                                     <label for="nama">Kode Barang</label>
-                                                    <input type="text" name="user_id" class="form-control" placeholder="Username" required="required" value="<?php echo getCode(); ?>" readonly>
+                                                    <input type="text" name="kode_barang" class="form-control" placeholder="Username" required="required" value="<?php echo getCode(); ?>" readonly>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <div class="form-label-group">
                                                     <label for="nama">Nama Barang</label>
-                                                    <input type="text" name="nama" class="form-control" placeholder="Nama Barang" required="required">
+                                                    <input type="text" name="nama_barang" class="form-control" placeholder="Nama Barang" required="required">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputEmail4">Jumlah Barang</label>
+                                                    <input type="number" min="0" class="form-control" id="jumlah" placeholder="Jumlah Barang">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPassword4">Harga Barang</label>
+                                                    <div class="input-group mb-2">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text">Rp</div>
+                                                        </div>
+                                                        <input type="text" class="form-control" id="harga" placeholder="harga">
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -60,7 +75,10 @@
                                                 <label for="gambar">Upload Gambar/Berkas</label>
                                                 <input type="file" class="form-control-file" name="gambar" id="gambar">
                                             </div>
-                                            <button class="btn btn-primary" type="submit" name="save">Add Tiket</button>
+                                            <button class="btn btn-primary" type="submit" name="save">
+                                                <i class="fa fa-save"></i>
+                                                Simpan
+                                            </button>
                                         </div>
                                     </form>
                                 </div>
