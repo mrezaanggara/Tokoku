@@ -53,12 +53,6 @@
                                                 <p><?php echo $data['deskripsi']; ?></p>
                                             </div>
                                         </div>
-
-
-
-
-
-                                        <?php echo $data['gambar']; ?>
                                     <?php endforeach ?>
                                 </div>
                             </div>
