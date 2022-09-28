@@ -44,14 +44,14 @@
     <!-- Nav Item - Perusahaan Collapse Menu -->
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePerusahaan" aria-expanded="true" aria-controls="collapsePerusahaan">
-            <i class="fas fa-fw fa-building"></i>
-            <span>Perusahaan</span>
+            <i class="fas fa-fw fa-file"></i>
+            <span>Nota</span>
         </a>
         <div id="collapsePerusahaan" class="collapse" aria-labelledby="headingPerusahaan" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Data Perusahaan:</h6>
-                <a class="collapse-item" href="<?php echo site_url('perusahaan') ?>">Semua Perusahaan</a>
-                <a class="collapse-item" href="utilities-border.html">Tambah Perusahaan</a>
+                <h6 class="collapse-header">Nota:</h6>
+                <a class="collapse-item" href="">Semua Nota Pembelian</a>
+                <a class="collapse-item" href="<?php echo site_url('surat/fakturpenjualan') ?>">Tambah Nota Pembelian</a>
             </div>
         </div>
     </li>
@@ -63,26 +63,6 @@
     <div class="sidebar-heading">
         Addons
     </div>
-
-    <!-- Nav Item - Surat Collapse Menu -->
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSurat" aria-expanded="true" aria-controls="collapseSurat">
-            <i class="fas fa-fw fa-envelope"></i>
-            <span>Surat</span>
-        </a>
-        <div id="collapseSurat" class="collapse" aria-labelledby="headingSurat" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Surat Keluar:</h6>
-                <a class="collapse-item" href="<?php echo site_url('surat/fakturpenjualan') ?>">Faktur Pembayaran</a>
-                <a class="collapse-item" href="<?php echo site_url('surat/fakturpajak') ?>">Faktur Pajak</a>
-                <a class="collapse-item" href="login.html">Surat Jalan</a>
-                <div class="collapse-divider"></div>
-                <h6 class="collapse-header">Surat Masuk:</h6>
-                <a class="collapse-item" href="404.html">Faktur Pembelian</a>
-                <a class="collapse-item" href="blank.html">Others</a>
-            </div>
-        </div>
-    </li>
 
     <!-- Nav Item - Users Collapse Menu -->
     <li class="nav-item">
